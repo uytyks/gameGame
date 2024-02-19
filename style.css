@@ -14,12 +14,16 @@
   height: 100%;
   padding: 0;
   margin: 0;
+  overflow-y:auto;
+  overflow-x:hidden;
+  text-wrap:wrap;
 }
 
 #pInput {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top:3px;
   text-indent: 10px;
   border:none;
   border-bottom: 2px solid black;
