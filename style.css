@@ -8,7 +8,8 @@
   border-width:2px;
 }
 #pInput {
-  margin-top: auto;
+  position: absolute;
+  bottom: 0px;
   width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
