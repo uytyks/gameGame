@@ -2,11 +2,14 @@
 <html>
   <head>
     <title>Gaming</title>
-    <link rel="stylesheet type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="chatBox.js" defer></script>
   </head>
   <body>
     <div id="mainBox">
-      <input type="text" id="pInput" name="pInput">
+      <ul class="chatBox" style="width:100%; height:100%; overflow:auto">
+      </ul>
+      <input type="text" id="pInput" name="pInput" placeholder=">>>">
     </div>
   </body>
 </html>
