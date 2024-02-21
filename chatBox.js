@@ -1,11 +1,18 @@
+import { tutorialFn } from "./tutorial.js";
+
+//User Input
 document.getElementById("pInput").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
       event.preventDefault();
       var text = document.getElementById("pInput");
       addText(text.value);
+      tutorialFn(text.value);
+      //call checking for input function here
       text.value = "";
     }});
 
+
+//Text Functions
 function addText(textToAdd){
     var start = document.getElementsByClassName("lastText");
     var newText = document.createElement("p");
