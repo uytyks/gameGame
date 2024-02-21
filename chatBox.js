@@ -13,7 +13,7 @@ document.getElementById("pInput").addEventListener("keypress", function(event) {
 
 
 //Text Functions
-function addText(textToAdd){
+export function addText(textToAdd){
     var start = document.getElementsByClassName("lastText");
     var newText = document.createElement("p");
     newText.className = "lastText";
