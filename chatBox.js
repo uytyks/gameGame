@@ -1,17 +1,17 @@
 document.getElementById("pInput").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
       event.preventDefault();
-      addText();
+      var text = document.getElementById("pInput");
+      addText(text.value);
+      text.value = "";
     }});
 
-function addText(){
+function addText(textToAdd){
     var start = document.getElementsByClassName("lastText");
     var newText = document.createElement("p");
     newText.className = "lastText";
-    var text = document.getElementById("pInput");
-    newText.appendChild(document.createTextNode(text.value));
+    newText.appendChild(document.createTextNode(textToAdd));
     start[start.length-1].insertAdjacentElement("afterend",newText);
-    text.value = "";
     if(isOverflown(document.getElementById("mainBox"))){
       while(isOverflown(document.getElementById("mainBox"))){
         var start = document.getElementsByClassName("lastText");
