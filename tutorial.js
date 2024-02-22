@@ -6,7 +6,7 @@ export var pName = ""
 export var pAlign = ""
 
 export function tutorialFn(input){
-    if(tutorial[0] == 0 && input === "start"){
+    if(tutorial[0] == 0 && input.toLowerCase() === "start"){
         tutorial[0] = 1;
         addText("And so our great adventure into The Beyond begins...\nWhat is your name?");
     }
@@ -21,6 +21,7 @@ export function tutorialFn(input){
             tutorial[2] = 1;
             pAlign = input.toLowerCase();
             addText("Aha! I see... You are " + pName + " the " + pAlign + "!");
+            addText("Welcome to The Beyond! Feel free to LOOK around")
         }
         else{
             addText("Ummm... That wasn't a valid option. Let's try this again.");
