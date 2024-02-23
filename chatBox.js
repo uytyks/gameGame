@@ -10,6 +10,7 @@ document.getElementById("pInput").addEventListener("keypress", function(event) {
       //user color picker
       if(pAlign === ""){
         pColor = "white";
+        //test comment
       }
       else if(pAlign === "good"){
         pColor = "yellow";
