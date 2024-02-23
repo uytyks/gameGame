@@ -1,4 +1,4 @@
-import { tutorialFn, pAlign } from "./tutorial.js";
+import { tutorialFn, pAlign, tutorial } from "./tutorial.js";
 
 //User Input
 document.getElementById("pInput").addEventListener("keypress", function(event) {
@@ -18,7 +18,12 @@ document.getElementById("pInput").addEventListener("keypress", function(event) {
         pColor = "red";
       }
       addText(text.value, pColor);
-      tutorialFn(text.value);
+      if(tutorial[3] == 0){
+        tutorialFn(text.value);
+      }
+      else{
+        console.log("user input parser");
+      }
       //call checking for input function here
       text.value = "";
     }});

@@ -1,10 +1,10 @@
 import { addText } from "./chatBox.js";
 
 //Start Game Variables
-var tutorial = [0,0,0,0]
+export var tutorial = [0,0,0,0]
 export var pName = ""
 export var pAlign = ""
-var tc = "white";
+export var tc = "white";
 
 var root = document.documentElement;
 
@@ -39,7 +39,7 @@ export function tutorialFn(input){
     }
     else if (tutorial[2] == 1 && tutorial[3] == 0){
         if(input.toLowerCase() === "look"){
-            tutorial[3] == 1;
+            tutorial[3] = 1;
             addText("Good! Feel free to LOOK around you when you do not know where to go next!",tc);
             addText("Type 'LOOK <THING>' to look at anything in CAPS",tc);
             addText("But back to the game,",tc);
@@ -54,7 +54,7 @@ export function tutorialFn(input){
             else{
                 textF = "diabolical" ;
             }
-            addText("The breeze feels good, it's the perfect day for " + textF + " deeds...",tc);
+            addText("A gentle breeze grazes your skin, it's the perfect day for " + textF + " deeds...",tc);
         }
         else{
             addText("*AHEM* I said 'Welcome to The Beyond! Feel free to ****LOOK**** around'",tc);
