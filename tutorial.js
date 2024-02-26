@@ -46,7 +46,7 @@ export function tutorialFn(input){
             addText("===================================================",tc);
             addText("Ah yes, around you is a green valley!",tc);
             addText("Overgrown lush grass fills the cracks in the stony sidewalk beneath your feet.",tc);
-            addText("It winds ahead of you towards a rickety SIGN, barely holding on to life and a collection of wooden buildings.",tc);
+            addText("It winds ahead of you towards a rickety SIGN barely holding on to life and a collection of wooden buildings.",tc);
             var textF = ""
             if(pAlign == "good"){
                 textF = "heroic";

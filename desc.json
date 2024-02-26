@@ -1,0 +1,12 @@
+{
+    "tutorial":{
+        "desc": "Around you is a green valley!\nOvergrown lush grass fills the cracks in the stony sidewalk beneath your feet.\nIt winds ahead of you towards a rickety SIGN barely holding on to life and a collection of wooden buildings.",
+        "sign": {
+            "look": {
+                "good": "Upon inspecting the sign closer, it reads 'Welcome to the ~TOWN~ of Startlandia!'\nHuh? It seems like there's some text on the back of the sign! 'Type GO <LOCATION> to travel to another location! Locations are surrounded by ~'s'\nSeems simple enough. You fix up the sign so others can understand it and feel accomplished in your reading.",
+                "evil": "Upon inspecting the sign closer, it reads 'Welcome to the ~TOWN~ of Startlandia!'\nHuh? It seems like there's some text on the back of the sign! 'Type GO <LOCATION> to travel to another location! Locations are surrounded by ~'s'\nSeems simple enough. You destroy the remains of the sign so that no one else can read it. Should've gotten here first.",
+                "evil2": "The sign is destroyed, but you remember it saying something about a ~TOWN~ and typing GO <LOCATION> to travel there."
+            }
+        }
+    }
+}

@@ -43,3 +43,9 @@ export function addText(textToAdd, textColor){
 function isOverflown(element) {
   return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
 }
+
+function parse(text){
+  var ar = text.split(' ');
+  var action = ar[0];
+  var obj = ar[1];
+}
