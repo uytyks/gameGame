@@ -1,8 +1,13 @@
 import { tutorialFn, pAlign, tutorial } from "./tutorial.js";
+import data from "./desc.json" assert { type: 'json' };
+
+//later store this and pAlign in player js file
+var pArea = 'tutorial';
 
 //User Input
 document.getElementById("pInput").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
+      console.log(data);
       event.preventDefault();
       var text = document.getElementById("pInput");
 
@@ -54,4 +59,14 @@ function parse(text){
   var ar = text.split(' ');
   var action = ar[0];
   var obj = ar[1];
+  if(action.toLowerCase() === 'look' && ar.length === 1){
+    addText(data[pAlign][pArea][desc],'white');
+  }
+  else if(action.toLowerCase() === 'look'){
+    //check if the object is in the area and you are allowed to view it
+    addText(data[pAlign][pArea][action][obj]);
+  }
+  else if(action.toLowerCase() === 'go'){
+    //if place to move exists, and you are in range to go there, print going text with a random adjective from a csv, and change area
+  }
 }
